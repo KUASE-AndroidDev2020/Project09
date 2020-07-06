@@ -1,4 +1,0 @@
-#Fri Jul 03 23:19:11 JST 2020
-base.0=/Users/yu-ya/Desktop/GitHub_repos/Project09/project_9/app/build/intermediates/dex/debug/out/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
