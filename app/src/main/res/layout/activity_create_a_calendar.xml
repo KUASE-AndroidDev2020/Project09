@@ -64,16 +64,71 @@
 
     </RadioGroup>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="82dp"
-        android:layout_height="39dp"
-        android:text="TextView"
+    <RelativeLayout
+        android:layout_width="268dp"
+        android:layout_height="732dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.68"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/time_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:text="Hour:Minute"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/pick_time_button"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginRight="96dp"
+            android:text="PICK TIME"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/time_text_view2"
+            android:layout_width="257dp"
+            android:layout_height="57dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:text="Hour:Minute"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/pick_time_button2"
+            android:layout_width="102dp"
+            android:layout_height="37dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="208dp"
+            android:layout_marginEnd="87dp"
+            android:layout_marginRight="87dp"
+            android:text="PICK TIME"
+            android:textSize="10sp" />
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
