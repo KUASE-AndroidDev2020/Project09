@@ -17,4 +17,10 @@ public class MainActivity extends AppCompatActivity {
         Intent Create_a_calendar = new Intent(this, Create_a_calendar.class);
         startActivity(Create_a_calendar);
     }
+    public void gotoMain2(View view){
+        Intent Main2Activity = new Intent( this,Main2Activity.class);
+        startActivity(Main2Activity);
+    }
+
+
 }
