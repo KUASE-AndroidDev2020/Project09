@@ -78,7 +78,7 @@
         <TextView
             android:id="@+id/tv_timer1"
             android:layout_width="230dp"
-            android:layout_height="115dp"
+            android:layout_height="105dp"
             android:background="@android:drawable/editbox_background"
             android:drawableTop="@drawable/ic_time"
             android:drawablePadding="16dp"
@@ -89,7 +89,7 @@
         <TextView
             android:id="@+id/tv_timer2"
             android:layout_width="232dp"
-            android:layout_height="126dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@android:drawable/editbox_background"
             android:drawableTop="@drawable/ic_time"
@@ -102,11 +102,11 @@
         <TextView
             android:id="@+id/tv_timer3"
             android:layout_width="match_parent"
-            android:layout_height="116dp"
+            android:layout_height="108dp"
             android:layout_marginTop="16dp"
+            android:background="@android:drawable/editbox_background"
             android:drawableTop="@drawable/ic_time"
             android:drawablePadding="16dp"
-            android:background="@android:drawable/editbox_background"
             android:gravity="center"
             android:hint="Select Time"
             android:text="TextView"
@@ -115,10 +115,10 @@
         <TextView
             android:id="@+id/tv_timer4"
             android:layout_width="match_parent"
-            android:layout_height="116dp"
+            android:layout_height="103dp"
             android:layout_marginTop="16dp"
-            android:drawableTop="@drawable/ic_time"
             android:background="@android:drawable/editbox_background"
+            android:drawableTop="@drawable/ic_time"
             android:drawablePadding="16dp"
             android:gravity="center"
             android:hint="Select Time"
@@ -128,7 +128,7 @@
         <TextView
             android:id="@+id/tv_timer5"
             android:layout_width="match_parent"
-            android:layout_height="116dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@android:drawable/editbox_background"
             android:drawableTop="@drawable/ic_time"
@@ -137,6 +137,28 @@
             android:hint="Select Time"
             android:text="TextView"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" message：" />
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=" message" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="16dp"
+            android:text="set"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
     </LinearLayout>
 

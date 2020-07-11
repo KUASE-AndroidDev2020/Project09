@@ -2,23 +2,28 @@ package com.example.project09;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.app.TimePickerDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.format.DateFormat;
 import android.view.View;
+import android.content.Intent;
+import android.provider.AlarmClock;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.view.View.OnClickListener;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class Create_a_calendar extends AppCompatActivity {
+public class Create_a_calendar extends AppCompatActivity  {
     TextView tvTimer1,tvTimer2,tvTimer3,tvTimer4,tvTimer5;
     int t1Hour,t1Minute,t2Hour,t2Minute,t3Hour,t3Minute,t4Hour,t4Minute,t5Hour,t5Minute;
 
@@ -28,11 +33,19 @@ public class Create_a_calendar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_a_calendar);
 
+
+
+
+
+
         tvTimer1 = findViewById(R.id.tv_timer1);
         tvTimer2 = findViewById(R.id.tv_timer2);
         tvTimer3 = findViewById(R.id.tv_timer3);
         tvTimer4 = findViewById(R.id.tv_timer4);
         tvTimer5 = findViewById(R.id.tv_timer5);
+
+
+
 
         tvTimer1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,12 +61,12 @@ public class Create_a_calendar extends AppCompatActivity {
                                 t1Minute = minute;
 
                                 Calendar calendar = Calendar.getInstance();
-                                calendar.set(0,0,0,t1Hour,t1Minute);
-                                tvTimer1.setText(DateFormat.format("hh:mm aa",calendar));
+                                calendar.set(0, 0, 0, t1Hour, t1Minute);
+                                tvTimer1.setText(DateFormat.format("hh:mm aa", calendar));
                             }
-                        },12,0,false
+                        }, 12, 0, false
                 );
-                timePickerDialog.updateTime(t1Hour,t1Minute);
+                timePickerDialog.updateTime(t1Hour, t1Minute);
                 timePickerDialog.show();
             }
         });
@@ -61,7 +74,7 @@ public class Create_a_calendar extends AppCompatActivity {
         tvTimer2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TimePickerDialog timePickerDialog =new TimePickerDialog(
+                TimePickerDialog timePickerDialog = new TimePickerDialog(
                         Create_a_calendar.this,
                         android.R.style.Theme_Holo_Light_Dialog_MinWidth,
                         new TimePickerDialog.OnTimeSetListener() {
@@ -86,10 +99,10 @@ public class Create_a_calendar extends AppCompatActivity {
                                     e.printStackTrace();
                                 }
                             }
-                        },12,0,false
+                        }, 12, 0, false
                 );
                 timePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                timePickerDialog.updateTime(t2Hour,t2Minute);
+                timePickerDialog.updateTime(t2Hour, t2Minute);
                 timePickerDialog.show();
             }
         });
@@ -107,12 +120,12 @@ public class Create_a_calendar extends AppCompatActivity {
                                 t3Minute = minute;
 
                                 Calendar calendar = Calendar.getInstance();
-                                calendar.set(0,0,0,t3Hour,t3Minute);
-                                tvTimer3.setText(DateFormat.format("hh:mm aa",calendar));
+                                calendar.set(0, 0, 0, t3Hour, t3Minute);
+                                tvTimer3.setText(DateFormat.format("hh:mm aa", calendar));
                             }
-                        },12,0,false
+                        }, 12, 0, false
                 );
-                timePickerDialog.updateTime(t3Hour,t3Minute);
+                timePickerDialog.updateTime(t3Hour, t3Minute);
                 timePickerDialog.show();
             }
         });
@@ -130,12 +143,12 @@ public class Create_a_calendar extends AppCompatActivity {
                                 t4Minute = minute;
 
                                 Calendar calendar = Calendar.getInstance();
-                                calendar.set(0,0,0,t4Hour,t4Minute);
-                                tvTimer4.setText(DateFormat.format("hh:mm aa",calendar));
+                                calendar.set(0, 0, 0, t4Hour, t4Minute);
+                                tvTimer4.setText(DateFormat.format("hh:mm aa", calendar));
                             }
-                        },12,0,false
+                        }, 12, 0, false
                 );
-                timePickerDialog.updateTime(t4Hour,t4Minute);
+                timePickerDialog.updateTime(t4Hour, t4Minute);
                 timePickerDialog.show();
             }
         });
@@ -153,15 +166,18 @@ public class Create_a_calendar extends AppCompatActivity {
                                 t5Minute = minute;
 
                                 Calendar calendar = Calendar.getInstance();
-                                calendar.set(0,0,0,t5Hour,t5Minute);
-                                tvTimer5.setText(DateFormat.format("hh:mm aa",calendar));
+                                calendar.set(0, 0, 0, t5Hour, t5Minute);
+                                tvTimer5.setText(DateFormat.format("hh:mm aa", calendar));
                             }
-                        },12,0,false
+                        }, 12, 0, false
                 );
-                timePickerDialog.updateTime(t5Hour,t5Minute);
+                timePickerDialog.updateTime(t5Hour, t5Minute);
                 timePickerDialog.show();
             }
         });
     }
-}
 
+
+
+
+}
