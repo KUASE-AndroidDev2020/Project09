@@ -6,14 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CalendarView;
-import android.widget.Toast;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.CalendarView;
 import android.widget.CalendarView.OnDateChangeListener;
+import android.widget.Toast;
 
-
-public class Main2Activity extends AppCompatActivity  implements OnDateChangeListener{
+public class Main2Activity extends AppCompatActivity implements OnDateChangeListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +27,9 @@ public class Main2Activity extends AppCompatActivity  implements OnDateChangeLis
     public void onSelectedDayChange(CalendarView view, int year, int month,
                                     int dayOfMonth) {
 
-        Intent varIntent = new Intent(this, calendar.class);
+        Intent varIntent = new Intent(Main2Activity.this, calendar.class);
 
         startActivity(varIntent);
 
     }
-
-
 }

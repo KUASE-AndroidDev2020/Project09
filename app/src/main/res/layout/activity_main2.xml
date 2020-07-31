@@ -10,7 +10,7 @@
         android:id="@+id/calendarView"
         android:layout_width="406dp"
         android:layout_height="722dp"
-        android:onClick="gotocalendar"
+        android:background="#B7ECF3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"

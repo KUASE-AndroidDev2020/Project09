@@ -10,13 +10,14 @@
         android:id="@+id/radioGroup"
         android:layout_width="146dp"
         android:layout_height="725dp"
+        android:background="#BBF0F6"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.003"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.166">
 
         <RadioButton
             android:id="@+id/radioButton1"
@@ -67,6 +68,7 @@
     <LinearLayout
         android:layout_width="263dp"
         android:layout_height="729dp"
+        android:background="#BFF2F8"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -138,26 +140,12 @@
             android:text="TextView"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=" message：" />
-
-        <EditText
-            android:id="@+id/msg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text=" message" />
-
         <Button
             android:id="@+id/btn"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginBottom="16dp"
-            android:text="set"
+            android:text="save"
             app:layout_constraintBottom_toBottomOf="parent" />
 
     </LinearLayout>
